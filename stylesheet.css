@@ -1,0 +1,244 @@
+*{
+
+    cursor: crosshair;
+}
+
+html {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 50px lightskyblue;
+    text-align: center;  
+    padding: 75px;
+    color: lightblue;
+    font-size: x-large;
+    background-image: linear-gradient(-100deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+     
+}
+
+#bigBox {
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.littleBox_1 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s move ease-in-out infinite;
+    animation-delay: 0;
+    animation-direction: reverse;
+}
+
+.littleBox_2 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s moveOver ease-in-out infinite;
+    animation-delay: 2s;
+}
+.littleBox_3 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s move linear infinite;
+    animation-delay: 4s;
+    animation-direction: reverse;
+}
+.littleBox_4 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s moveOver ease-out infinite;
+    animation-delay: 6s;
+}
+.littleBox_5 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s move ease-in infinite;
+    animation-delay: 8s;
+    
+}
+.littleBox_6 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s moveOver ease-in-out infinite;
+    animation-delay: 10s;
+}
+.littleBox_7 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s move linear infinite;
+    animation-delay: 8s;
+}
+.littleBox_8 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s moveOver ease-in-out infinite;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+}
+.littleBox_9 {
+
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px lightblue;
+    background-image: linear-gradient(-40deg, rgba(173,216,230,50%), rgba(248,248,255,50%));
+
+    animation: 2s moveOver ease-in infinite;
+    animation-delay: 10s;
+    animation-direction: reverse;
+}
+
+@keyframes move {
+
+    0% {
+        
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+       
+
+    }
+    33% {
+
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
+        
+    }
+    67% {
+
+        transform: rotateX(180deg) rotateY(90deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        
+    }
+}
+
+    @keyframes moveOver {
+
+        0% {
+            
+            transform: rotateX(0) rotateY(0) rotateZ(0);
+           
+    
+        }
+        33% {
+    
+            transform: rotateX(0) rotateY(0) rotateZ(180deg);
+            
+        }
+        67% {
+    
+            transform: rotateX(95deg) rotateY(180deg) rotateZ(360deg);
+        }
+        100% {
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            
+        }
+}
+
+.littleBox_1:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_2:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_3:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_4:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_5:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_6:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_7:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_8:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
+.littleBox_9:hover {
+
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px red;
+    background-image: linear-gradient(-40deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  
+}
